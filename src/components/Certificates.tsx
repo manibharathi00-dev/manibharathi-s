@@ -2,52 +2,55 @@ import { useState } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ChevronLeft, ChevronRight, Award, Calendar, Building } from "lucide-react";
-import certificateSample from "@/assets/certificate-sample.jpg";
+import cloudComputingCert from "@/assets/cloud-computing-cert.jpg";
+import ycatParticipationCert from "@/assets/ycat-participation-cert.jpg";
+import serviceNowCert from "@/assets/servicenow-cert.jpg";
+import pythonCert from "@/assets/python-cert.jpg";
+import sqlCert from "@/assets/sql-cert.jpg";
 
 const Certificates = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  // Sample certificates - in a real app, these would be dynamically loaded
   const certificates = [
     {
       id: 1,
-      title: "Python Programming Certificate",
-      organization: "Programming Institute",
-      date: "2024",
-      image: certificateSample,
-      description: "Completed comprehensive Python programming course covering fundamentals to advanced concepts",
+      title: "Cloud Computing",
+      organization: "Don Bosco Tech Society",
+      date: "December 2022",
+      image: cloudComputingCert,
+      description: "Successfully completed training in Cloud Computing conducted by Don Bosco Tech Society from October 2022 to December 2022.",
     },
     {
       id: 2,
-      title: "Database Management Certificate",
-      organization: "Tech Academy",
-      date: "2024",
-      image: certificateSample,
-      description: "Certification in SQL and database design principles",
+      title: "Python for Beginners: A Gateway to Machine Learning",
+      organization: "Udemy",
+      date: "September 2025",
+      image: pythonCert,
+      description: "Comprehensive Python programming course covering fundamentals and introduction to machine learning concepts.",
     },
     {
       id: 3,
-      title: "Web Development Certificate",
-      organization: "Online Learning Platform",
-      date: "2023",
-      image: certificateSample,
-      description: "Frontend web development certification covering HTML, CSS, and JavaScript",
+      title: "Relational Databases & SQL: Complete Guide for Developers",
+      organization: "Udemy",
+      date: "September 2025",
+      image: sqlCert,
+      description: "Complete guide to relational databases and SQL for developers with practical applications and query optimization.",
     },
     {
       id: 4,
-      title: "Software Development Practices",
-      organization: "Professional Institute",
-      date: "2023",
-      image: certificateSample,
-      description: "Certification in software development methodologies and best practices",
+      title: "ServiceNow Micro-Certification - Welcome to ServiceNow",
+      organization: "ServiceNow",
+      date: "May 2025",
+      image: serviceNowCert,
+      description: "Successfully completed certification requirements for ServiceNow platform fundamentals and administration.",
     },
     {
       id: 5,
-      title: "Computer Applications Certificate",
-      organization: "Bishop Heber College",
-      date: "2025",
-      image: certificateSample,
-      description: "Academic achievement certificate for Master of Computer Applications",
+      title: "YCAT - Internship Common Aptitude Test",
+      organization: "YCAT",
+      date: "June 2025",
+      image: ycatParticipationCert,
+      description: "Certificate of participation in the Internship Common Aptitude Test demonstrating dedication and professional development efforts.",
     },
   ];
 
