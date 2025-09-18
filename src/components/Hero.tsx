@@ -18,7 +18,7 @@ const Hero = () => {
                 🎓 Available for new opportunities
               </div>
               <h1 className="hero-text text-primary">
-                Hey, I'm <span className="text-accent">Manibharathi</span>
+                Hi, I'm <span className="text-accent">Manibharathi</span>
               </h1>
               <h2 className="text-xl md:text-2xl text-portfolio-textLight font-medium"> Software Developer</h2>
             </div>
