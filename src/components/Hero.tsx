@@ -1,15 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Download } from "lucide-react";
 import profilePhoto from "@/assets/profile-photo.jpg";
-
 const Hero = () => {
   const scrollToAbout = () => {
     const element = document.querySelector("#about");
-    element?.scrollIntoView({ behavior: "smooth" });
+    element?.scrollIntoView({
+      behavior: "smooth"
+    });
   };
-
-  return (
-    <section id="home" className="min-h-screen bg-portfolio-hero flex items-center pt-20">
+  return <section id="home" className="min-h-screen bg-portfolio-hero flex items-center pt-20">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -26,12 +25,7 @@ const Hero = () => {
               </h2>
             </div>
             
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
-              I am Manibharathi, a recent MCA graduate from Bishop Heber College (2025). 
-              I have a strong interest in software development and possess skills in Python, 
-              SQL, and web technologies. I am eager to begin my career in IT, contribute to 
-              innovative projects, and continue building my technical expertise.
-            </p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">I am Manibharathi, MCA graduate from Bishop Heber College (2025). I have a strong interest in software development and possess skills in Python, SQL, and web technologies. I am eager to begin my career in IT, contribute to innovative projects, and continue building my technical expertise.</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={scrollToAbout} className="portfolio-gradient text-white border-0 hover:opacity-90">
@@ -49,11 +43,7 @@ const Hero = () => {
           <div className="flex justify-center lg:justify-end">
             <div className="relative">
               <div className="w-80 h-96 rounded-2xl overflow-hidden shadow-2xl">
-                <img
-                  src={profilePhoto}
-                  alt="Manibharathi S - Software Developer"
-                  className="w-full h-full object-cover"
-                />
+                <img src={profilePhoto} alt="Manibharathi S - Software Developer" className="w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-accent text-accent-foreground px-4 py-2 rounded-lg shadow-lg">
                 <span className="font-semibold">MCA Graduate 2025</span>
@@ -62,8 +52,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
