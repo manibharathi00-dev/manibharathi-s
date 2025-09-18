@@ -18,20 +18,20 @@
     --popover: 0 0% 100%;
     --popover-foreground: 240 10% 3.9%;
 
-    /* Primary - Deep navy for professional look */
-    --primary: 214 31% 21%;
+    /* Primary - Deep orange for professional look */
+    --primary: 25 31% 21%;
     --primary-foreground: 0 0% 98%;
 
-    /* Secondary - Soft blue accent */
-    --secondary: 214 32% 91%;
-    --secondary-foreground: 214 31% 21%;
+    /* Secondary - Soft orange accent */
+    --secondary: 25 32% 91%;
+    --secondary-foreground: 25 31% 21%;
 
     /* Muted colors */
-    --muted: 210 40% 96%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 30 40% 96%;
+    --muted-foreground: 25 16.3% 46.9%;
 
-    /* Accent - Professional blue */
-    --accent: 214 84% 56%;
+    /* Accent - Professional orange */
+    --accent: 25 84% 56%;
     --accent-foreground: 0 0% 98%;
 
     /* Success color for achievements */
@@ -43,16 +43,16 @@
     --destructive-foreground: 210 40% 98%;
 
     /* Border and input */
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 214 84% 56%;
+    --border: 25.3 31.8% 91.4%;
+    --input: 25.3 31.8% 91.4%;
+    --ring: 25 84% 56%;
 
     /* Custom portfolio colors */
-    --portfolio-hero: 214 100% 97%;
-    --portfolio-section: 0 0% 98%;
-    --portfolio-text-light: 215 20.2% 65.1%;
-    --portfolio-gradient-start: 214 84% 56%;
-    --portfolio-gradient-end: 220 84% 65%;
+    --portfolio-hero: 25 100% 97%;
+    --portfolio-section: 30 20% 98%;
+    --portfolio-text-light: 25 20.2% 65.1%;
+    --portfolio-gradient-start: 25 84% 56%;
+    --portfolio-gradient-end: 35 84% 65%;
 
     /* Radius */
     --radius: 0.75rem;
