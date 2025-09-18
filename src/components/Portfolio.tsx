@@ -54,7 +54,11 @@ const Portfolio = () => {
                   />
                 </div>
                 <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
-                  <Button variant="secondary" className="bg-white/90 text-primary">
+                  <Button 
+                    variant="secondary" 
+                    className="bg-white/90 text-primary"
+                    onClick={() => window.open('https://iwayinternetcafe.netlify.app/', '_blank')}
+                  >
                     <ExternalLink className="mr-2 h-4 w-4" />
                     View Project
                   </Button>
