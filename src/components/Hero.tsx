@@ -20,12 +20,10 @@ const Hero = () => {
               <h1 className="hero-text text-primary">
                 Hey, I'm <span className="text-accent">Manibharathi</span>
               </h1>
-              <h2 className="text-xl md:text-2xl text-portfolio-textLight font-medium">
-                Aspiring Software Developer
-              </h2>
+              <h2 className="text-xl md:text-2xl text-portfolio-textLight font-medium"> Software Developer</h2>
             </div>
             
-            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">I am Manibharathi, MCA graduate from Bishop Heber College (2025). I have a strong interest in software development and possess skills in Python, SQL, and web technologies. I am eager to begin my career in IT, contribute to innovative projects, and continue building my technical expertise.</p>
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">I am Manibharathi, MCA graduate from Bishop Heber College (2025). I have a strong interest in software development and possess skills in Python, SQL, and web technologies.</p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <Button onClick={scrollToAbout} className="portfolio-gradient text-white border-0 hover:opacity-90">
