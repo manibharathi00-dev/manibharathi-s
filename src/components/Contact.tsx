@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Linkedin, Github, MessageCircle } from "lucide-react";
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -28,12 +28,17 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
+    // Create mailto link with form data
+    const subject = `Message from ${formData.name}`;
+    const body = `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:manibharathigps@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open email client
+    window.open(mailtoLink);
 
     toast({
-      title: "Message Sent!",
-      description: "Thank you for your message. I'll get back to you soon!",
+      title: "Email Client Opened!",
+      description: "Your message has been prepared in your email client.",
     });
 
     setFormData({ name: "", email: "", message: "" });
@@ -96,6 +101,48 @@ const Contact = () => {
                     </a>
                   </Card>
                 ))}
+              </div>
+
+              {/* Social Media Links */}
+              <div className="space-y-4">
+                <h4 className="text-lg font-semibold text-primary">Connect with me</h4>
+                <div className="flex flex-wrap gap-3">
+                  <Button asChild variant="outline" size="sm">
+                    <a 
+                      href="https://www.linkedin.com/in/manibharathiselvam" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <Linkedin className="h-4 w-4" />
+                      LinkedIn
+                    </a>
+                  </Button>
+                  
+                  <Button asChild variant="outline" size="sm">
+                    <a 
+                      href="https://github.com/manibharathi00-dev" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <Github className="h-4 w-4" />
+                      GitHub
+                    </a>
+                  </Button>
+                  
+                  <Button asChild variant="outline" size="sm">
+                    <a 
+                      href="https://wa.me/917502558479" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <MessageCircle className="h-4 w-4" />
+                      WhatsApp
+                    </a>
+                  </Button>
+                </div>
               </div>
 
               <Card className="portfolio-card bg-accent/5 border-accent/20">

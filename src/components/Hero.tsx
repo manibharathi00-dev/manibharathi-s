@@ -32,9 +32,11 @@ const Hero = () => {
                 Learn More About Me
                 <ArrowDown className="ml-2 h-4 w-4" />
               </Button>
-              <Button variant="outline">
-                <Download className="mr-2 h-4 w-4" />
-                Download Resume
+              <Button variant="outline" asChild>
+                <a href="/resume/MANI_BHARTHI.pdf" download="Manibharathi_S_Resume.pdf">
+                  <Download className="mr-2 h-4 w-4" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>

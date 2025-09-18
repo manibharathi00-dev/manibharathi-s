@@ -13,11 +13,7 @@ const Footer = () => {
           </div>
           
           <div className="flex items-center justify-center space-x-1 text-sm">
-            <span>Made with</span>
-            <Heart className="h-4 w-4 text-red-400 fill-current" />
-            <span>by Manibharathi</span>
-            <span>•</span>
-            <span>© {currentYear}</span>
+            <span>© {currentYear} Manibharathi S</span>
           </div>
 
           <div className="pt-4 border-t border-primary-foreground/20">
