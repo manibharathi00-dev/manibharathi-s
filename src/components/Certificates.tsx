@@ -46,8 +46,8 @@ const Certificates = () => {
     },
     {
       id: 5,
-      title: "YCAT - Internship Common Aptitude Test",
-      organization: "YCAT",
+      title: "ICAT - Internship Common Aptitude Test",
+      organization: "ICAT",
       date: "June 2025",
       image: ycatParticipationCert,
       description: "Certificate of participation in the Internship Common Aptitude Test demonstrating dedication and professional development efforts.",
