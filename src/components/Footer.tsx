@@ -1,19 +1,16 @@
 import { Heart } from "lucide-react";
-
 const Footer = () => {
   const currentYear = new Date().getFullYear();
-
-  return (
-    <footer className="bg-primary text-primary-foreground py-8">
+  return <footer className="bg-primary text-primary-foreground py-8">
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4">
           <div>
             <h3 className="text-xl font-semibold">Manibharathi S</h3>
-            <p className="text-primary-foreground/80">Aspiring Software Developer</p>
+            <p className="text-primary-foreground/80"> Software Developer</p>
           </div>
           
           <div className="flex items-center justify-center space-x-1 text-sm">
-            <span>© {currentYear} Manibharathi S</span>
+            
           </div>
 
           <div className="pt-4 border-t border-primary-foreground/20">
@@ -23,8 +20,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
